@@ -1,5 +1,13 @@
 # Llista de continguts a publicar.
 items:
+  - title: "RA 3 — Consulta la informació emmagatzemada en una base de dades fent servir assistents, eines gràfiques i el llenguatge de manipulació de dades."
+    section: "RA03"
+    # source: "source/unitats-didactiques/ud01-introduccio-xarxes-locals/ud01-introduccio.docx"
+    output: "unitats-didactiques/ra03/ra03-intro.md"  # si vols URL neta
+    publish: true
+    freeze: false   # per personalitzar l'index.md a mà sense que es torni a sobreescriure
+
+
   # Exemple (descomenta i adapta quan tinguis el DOCX):
   # - title: "UD01 — Introducció a …"
   #   section: "UD01"

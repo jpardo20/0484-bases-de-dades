@@ -34,6 +34,14 @@ jobs:
       - name: Build site
         run: mkdocs build
 
+      # 👉 Nou pas per copiar presentacions dins del site
+      - name: Add presentations to site
+        run: |
+          if [ -d "presentacions" ]; then
+            mkdir -p site/presentacions
+            cp -r presentacions/* site/presentacions/
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

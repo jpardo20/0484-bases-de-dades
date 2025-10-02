@@ -1,6 +1,25 @@
+/* tema.css - personalització del mòdul */
 
-/* Espai per a personalitzar tema específic de curs */
-/* Exemple: mida de lletra lleugerament més gran */
-.reveal .slides section { font-size: 32px; }
-.reveal h1 { font-size: 2.2em; }
-.reveal h2 { font-size: 1.6em; }
+:root {
+  --color-primari: #115eaf;
+  --color-primari-fosc: #0f4f93;
+  --color-fons: #f7f9fc;
+}
+
+.reveal section {
+  background-color: var(--color-fons);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.reveal h1 {
+  color: var(--color-primari);
+}
+
+.reveal a {
+  color: var(--color-primari);
+}
+
+.reveal a:hover {
+  color: var(--color-primari-fosc);
+}

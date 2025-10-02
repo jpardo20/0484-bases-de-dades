@@ -1,17 +1,12 @@
 # DAM_MP02_002_UF01_Pres_002_Conceptes_Basics_Bases_Dades
 
-## Diapositiva 1
+## Conceptes bàsics: de Bases de Dades
 
-DAM1 MP02 BBDD
-
-Conceptes bàsics: de Bases de Dades
-
-UF01 - Introducció a les
-Bases de Dades
+UD01 - Introducció a les Bases de Dades
 
 ---
 
-## Diapositiva 2
+## Definició
 
 món real: constituït pels objectes (materials o no) de la realitat que ens interessen i amb els quals haurem de treballar.
 

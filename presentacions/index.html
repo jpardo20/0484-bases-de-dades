@@ -1,31 +1,122 @@
 <!doctype html>
 <html lang="ca">
+
 <head>
-  <meta charset="utf-8">
-  <title>Presentacions · Mòdul 0484 - Bases de dades</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <title>Presentacions · Mòdul 0484 - Bases de dades</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <style>
+        /* Estil del portal minimalista, reutilitzant base.css per a tipografies */
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial;
+            margin: 0;
+        }
+
+        header {
+            background: #0d4f8b;
+            color: white;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin: 0 0 .5rem 0;
+            font-size: 1.8rem;
+        }
+
+        header .links a {
+            color: white;
+            margin-right: 1rem;
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1.5rem 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1rem;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: .6rem .9rem;
+            border-radius: 10px;
+            border: 1px solid #0d4f8b;
+        }
+
+        .btn.primary {
+            background: #0d4f8b;
+            color: white;
+            border-color: #0d4f8b;
+            text-decoration: none;
+        }
+
+        footer {
+            padding: 2rem 1rem;
+            color: #6b7280;
+        }
+    </style>
 </head>
+
 <body class="portal">
-  <header class="site-header">
-    <h1>📊 Presentacions del mòdul 0484 - Bases de dades</h1>
-    <p class="subtitle">Tria una presentació per obrir-la</p>
+    <header>
+        <h1>📊 Presentacions del mòdul 0484 - Bases de dades</h1>
+        <div class="links">
+            <a href="https://jpardo20.github.io/0484-bases-de-dades/">← Tornar al mòdul</a>
+        </div>
+    </header>
 
-    <div class="toolbar">
-      <input id="search" type="search" placeholder="Cerca (títol o descripció)…" aria-label="Cercar presentacions">
-    </div>
-  </header>
+    <main>
+        <div class="grid">
+            <div class="card">
+                <h3>Introducció</h3>
+                <p>Primers conceptes del mòdul 0484 i logística del curs</p>
+                <a class="btn primary" href="introduccio.html">Obrir presentació</a>
+            </div>
+            <div class="card">
+                <h3>001 - Introducció a Bases de Dades</h3>
+                <p>Conceptes bàsics de BD: dades, informació, SGBD, operacions</p>
+                <a class="btn primary" href="001_Introduccio_Bases_Dades.html">Obrir presentació</a>
+            </div>
+            <div class="card">
+                <h3>002 - Conceptes Basics Bases Dades</h3>
+                <p>Conceptes bàsics de BD: dades, informació, SGBD, operacions</p>
+                <a class="btn primary" href="./002_Conceptes_Basics_Bases_Dades.html">Obrir presentació</a>
+            </div>
+            <div class="card">
+                <h3>003 - Conceptes Basics Bases Dades</h3>
+                <p>Conceptes bàsics de BD: dades, informació, SGBD, operacions</p>
+                <a class="btn primary" href="./003_MER_Model_Entitat_Relacio.html">Obrir presentació</a>
+            </div>
+            <div class="card">
+                <h3>004 - Relacions MER</h3>
+                <p>Conceptes bàsics de BD: dades, informació, SGBD, operacions</p>
+                <a class="btn primary" href="./004_Relacions_MER.html">Obrir presentació</a>
+            </div>
+            <div class="card">
+                <h3>005 - Claus MER</h3>
+                <p>Conceptes bàsics de BD: dades, informació, SGBD, operacions</p>
+                <a class="btn primary" href="./005_Claus_MER.html">Obrir presentació</a>
+            </div>
+        </div>
+    </main>
 
-  <main>
-    <div id="presentations-grid" class="grid" aria-live="polite">
-      <!-- Targetes generades per JS -->
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 · Mòdul 0484 – Bases de dades</p>
-  </footer>
-
-  <script src="assets/js/script.js"></script>
+    <footer>
+        <p>&copy; 2025 · Mòdul 0484 – Bases de dades</p>
+    </footer>
 </body>
+
 </html>

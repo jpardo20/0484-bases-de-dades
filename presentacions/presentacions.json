@@ -1,0 +1,47 @@
+{
+  "presentations": [
+    {
+      "order": 0,
+      "title": "Introducció · Mòdul 0484 - Bases de dades",
+      "src": "introduccio.md",
+      "description": "Introducció · Mòdul 0484 - Bases de dades"
+    },
+    {
+      "order": 1,
+      "title": "001 Introducció Bases de Dades · Mòdul 0484 - Bases de dades",
+      "src": "001_Introduccio_Bases_Dades.md",
+      "description": "Primers conceptes de BD: dades, informació, SGBD i operacions"
+    },
+    {
+      "order": 2,
+      "title": "002 Conceptes Basics Bases Dades · Mòdul 0484 - Bases de dades",
+      "src": "002_Conceptes_Basics_Bases_Dades.md",
+      "description": "Tipus de dades, models i arquitectura"
+    },
+    {
+      "order": 3,
+      "title": "003 MER Model Entitat Relacio · Mòdul 0484 - Bases de dades",
+      "src": "003_MER_Model_Entitat_Relacio.md",
+      "description": "Entitats, atributs i relacions"
+    },
+    {
+      "order": 4,
+      "title": "004 Relacions MER · Mòdul 0484 - Bases de dades",
+      "src": "004_Relacions_MER.md",
+      "description": "Cardinalitats i participació"
+    },
+    {
+      "order": 5,
+      "title": "005 Claus MER · Mòdul 0484 - Bases de dades",
+      "src": "005_Claus_MER.md",
+      "description": "Claus primàries, candidates i estrangeres"
+    },
+    {
+      "order": 0,
+      "title": "Introducció · Mòdul 0484 - Bases de dades",
+      "src": "000_Introduccio_Modul.md",
+      "description": "Logística del curs i organització",
+      "theme": "black"
+    }
+  ]
+}

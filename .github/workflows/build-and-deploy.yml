@@ -1,0 +1,68 @@
+name: build-and-deploy
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Install deps
+        run: |
+          sudo apt-get update && sudo apt-get install -y pandoc
+          python -m pip install -U mkdocs mkdocs-material pyyaml
+
+      - name: Publish selected items (DOCX -> MD)
+        run: python scripts/publish_selected.py
+
+      - name: Build site
+        run: mkdocs build
+
+      # 👇 Afegits: .nojekyll, presentacions/ i index.html d'arrel com a menú
+      - name: Add static assets to site
+        run: |
+          # Evita processament Jekyll a Pages
+          touch site/.nojekyll
+
+          # Copia totes les presentacions tal qual
+          if [ -d "presentacions" ]; then
+            rm -rf site/presentacions
+            mkdir -p site/presentacions
+            cp -r presentacions/* site/presentacions/
+          fi
+
+          # Si tens un index.html d'arrel (menú), substitueix el d'MkDocs
+          if [ -f "index.html" ]; then
+            cp index.html site/index.html
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

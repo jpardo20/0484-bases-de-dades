@@ -5,7 +5,7 @@ site_url: https://jpardo20.github.io/0484-bases-de-dades-23/
 nav:
   - Inici: index.md
   - Continguts: continguts.md
-  - Presentacions: https://jpardo20.github.io/0480484-bases-de-dades-23/presentacions/
+  - Presentacions: https://jpardo20.github.io/0484-bases-de-dades-23/presentacions/
 
 theme:
   name: material

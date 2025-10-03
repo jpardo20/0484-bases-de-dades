@@ -11,7 +11,3 @@ site/
 # Cache del convertidor
 .publish-cache.json
 .vscode/settings.json
-presentacions/introduccio.*
-
-README-OPERATIU.md
-README-2.md

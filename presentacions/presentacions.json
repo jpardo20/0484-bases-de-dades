@@ -2,25 +2,25 @@
   "presentations": [
     {
       "order": 1,
-      "title": "001 Introducció Bases de Dades",
+      "title": "Introducció Bases de Dades",
       "src": "001_Introduccio_Bases_Dades.md",
       "description": "Primers conceptes de BD: dades, informació, SGBD i operacions"
     },
     {
-      "order": 3,
-      "title": "002 Conceptes Basics Bases Dades",
+      "order": 2,
+      "title": "Conceptes Basics Bases Dades",
       "src": "002_Conceptes_Basics_Bases_Dades.md",
       "description": "Tipus de dades, models i arquitectura"
     },
     {
-      "order": 4,
-      "title": "003 MER Model Entitat Relacio",
+      "order": 3,
+      "title": "MER Model Entitat Relacio",
       "src": "003_MER_Model_Entitat_Relacio.md",
       "description": "Entitats, atributs i relacions"
     },
     {
-      "order": 5,
-      "title": "004 Relacions MER",
+      "order": 4,
+      "title": "Relacions MER",
       "src": "004_Relacions_MER.md",
       "description": "Cardinalitats i participació"
     }

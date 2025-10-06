@@ -1,7 +1,7 @@
 // Carrega el fitxer extern JSON amb la llista de presentacions
 async function loadPresentations() {
   try {
-    const res = await fetch("assets/data/presentations.json");
+    const res = await fetch("presentations.json");
     if (!res.ok) throw new Error("No s'ha pogut carregar presentations.json");
     return await res.json();
   } catch (err) {

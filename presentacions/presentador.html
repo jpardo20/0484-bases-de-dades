@@ -14,14 +14,15 @@
       .topbar {
         position: fixed;
         top: 0; left: 0; right: 0;
-        background: #115eaf; color: #fff;
+        /* background: #115eaf; color: #fff; */
+        background: #fff; color: #000;
         display: flex; align-items: center; gap: 16px;
         padding: 6px 12px;
         z-index: 1000;
         font-size: .95rem;
       }
       .topbar a {
-        color: #fff;
+        color: #000;
         text-decoration: underline;
         font-weight: 600;
       }
@@ -39,14 +40,17 @@
   </head>
   <body>
     <div class="topbar">
-      <span id="topbar-title">Presentació</span>
-      <a href="./index.html">← Tornar a Presentacions</a>
+        <a href="./index.html">← Tornar a Presentacions</a>
+        <span class="topbar__sep" style="text-align: center;" aria-hidden="true">|</span>
+        <span id="topbar-title">Presentació</span>
+        <span class="topbar__sep" aria-hidden="true">|</span>
+        <img src="assets/img/Logo_DIGIQTECH_343x99.png" alt="DigiTech" class="logo">
     </div>
     <div class="reveal">
       <div class="slides">
         <section id="md-section"
         data-separator="---"
-        data-separator-vertical="----"
+        data-separator-vertical="--"
         data-separator-notes="^Note:"
         data-charset="utf-8"></section>
       </div>

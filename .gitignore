@@ -11,3 +11,4 @@ site/
 # Cache del convertidor
 .publish-cache.json
 .vscode/settings.json
+Neteja_informe.txt

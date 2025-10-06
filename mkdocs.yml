@@ -1,22 +1,22 @@
 site_name: Mòdul 0484 - Bases de dades
 site_description: Publicació progressiva des d'un sol repositori
-site_url: https://jpardo20.github.io/0484-bases-de-dades-23/
+site_url: https://jpardo20.github.io/0484-bases-de-dades/
 
 nav:
   - Continguts: continguts.md
-  - Presentacions: https://jpardo20.github.io/0484-bases-de-dades-23/presentacions/
+  - Presentacions: https://jpardo20.github.io/0484-bases-de-dades/presentacions/
 
 theme:
   name: material
 
 # site_name: Mòdul 0484 - Bases de dades
 # site_description: Publicació progressiva des d'un sol repositori
-# site_url: https://jpardo20.github.io/0484-bases-de-dades-23/
+# site_url: https://jpardo20.github.io/0484-bases-de-dades/
 
 # nav:
 #   - Inici: index.md
 #   - Continguts: continguts.md
-#   - Presentacions: https://jpardo20.github.io/0484-bases-de-dades-23/presentacions/
+#   - Presentacions: https://jpardo20.github.io/0484-bases-de-dades/presentacions/
 
 # theme:
 #   name: material

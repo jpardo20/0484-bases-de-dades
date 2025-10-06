@@ -16,8 +16,7 @@ UD01 - Introducció a les Bases de Dades
 
 **món de les interpretacions**: representacions informàtiques, o dades, del món conceptual, necessàries per poder treballar.
 
-
----
+--
 
 ![alt text](./assets/img/representacio-dades.png)
 
@@ -34,13 +33,9 @@ UD01 - Introducció a les Bases de Dades
 
 ## Conversió de les concepcions en dades
 
-fase de disseny lògic: Es treballa amb el model abstracte de dades obtingut al final de l'etapa de disseny conceptual, per tal de traduir-ho al model de dades utilitzat pel SGBD amb el qual es vol implementar i mantenir la futura BD.
+* **fase de disseny lògic**: Es treballa amb el model abstracte de dades obtingut al final de l'etapa de disseny conceptual, per tal de traduir-ho al model de dades utilitzat pel SGBD amb el qual es vol implementar i mantenir la futura BD.
 
-fase de disseny físic: Es poden fer certes modificacions sobre l'esquema lògic obtingut en la fase de disseny anterior, per tal d'incrementar l'eficiència en algunes de les operacions que s'hagin de fer amb les dades.
-
-
-
-
+* **fase de disseny físic**: Es poden fer certes modificacions sobre l'esquema lògic obtingut en la fase de disseny anterior, per tal d'incrementar l'eficiència en algunes de les operacions que s'hagin de fer amb les dades.
 
 ---
 
@@ -54,7 +49,6 @@ Tres elements caracteritzen fonamentalment les informacions:
 
 **valors**: són els continguts concrets dels atributs, les determinacions concretes que assoleixen.
 
-
 ---
 
 ## Exemple d'entitat, atributs i valors (1/4)
@@ -65,8 +59,7 @@ D'aquesta pel·lícula concreta ens interessaran alguns aspectes, que anomenarem
 
 Finalment, aquests atributs adoptaran uns valors concrets com ara, i respectivament, Paths of glory, Stanley Kubrick i 1957.
 
-
----
+--
 
 ## Exemple d'entitat, atributs i valors (2/4)
 
@@ -74,7 +67,7 @@ Finalment, aquests atributs adoptaran uns valors concrets com ara, i respectivam
 
 font [imdb.com](https://www.imdb.com/)
 
----
+--
 
 ## Exemple d'entitat, atributs i valors (3/4)
 
@@ -85,16 +78,13 @@ desconeixerem quin atribut (propietat) de l'entitat adopta el valor obtingut, la
 
 Sabrem que l'entitat té una certa propietat, però en desconeixerem el valor, i per tant aquest coneixement difícilment ens resultarà útil.
 
-
----
+--
 
 ## Exemple d'entitat, atributs i valors (4/4)
 
 ![alt text](./assets/img/exemple-entitat-atribut-valor-amb-buits.png)
 
 font [imdb.com](https://www.imdb.com/)
-
-
 
 ---
 
@@ -104,6 +94,8 @@ font [imdb.com](https://www.imdb.com/)
 
 **entitat instància**: es refereix a la conceptualització d'un objecte concret del món real, com ara un cotxe concret, distingible dels altres objectes del mateix tipus, gràcies a alguna propietat (com podria ser el valor de l'atribut Matrícula).
 
+--
+
 ![alt text](./assets/img/entitat-tipus.png)
 
 ---
@@ -112,15 +104,11 @@ font [imdb.com](https://www.imdb.com/)
 
 **tipus de dada**: defineix un conjunt de valors amb unes característiques comunes que els fan compatibles, per la qual cosa també defineix una sèrie d'operacions admissibles sobre aquests valors.
 
-
-
-
----
+--
 
 ## Exemple de tipus de dada
 
 Podem considerar els nombres enters com un tipus de dada (diferent d'altres tipus, com per exemple els nombres reals, els caràcters, etc.), sobre el qual es poden definir certes operacions, com la suma, la resta, la multiplicació o la divisió entera (però no la divisió exacta, que només és possible entre els nombres reals).
-
 
 ---
 
@@ -130,7 +118,7 @@ Imaginem que, en l'àmbit d'uns estudis determinats, s'exigeix un mínim d'assis
 Imaginem que s'admet, durant tot el curs acadèmic, un màxim de vint faltes injustificades. Doncs bé, hi podria haver un atribut de l'entitat ALUMNES, anomenat, per exemple, nombreFaltes, que recollís aquesta circumstància.
 Aquest atribut podria emmagatzemar dades de tipus enter. I també se'n podria limitar el domini de 0 (per indicar que no hi ha hagut cap inassistència) a 20 faltes injustificades, ja que en arribar a aquest límit es produiria l'expulsió de l'alumne.
 
----
+--
 
 ## Exemple de domini (2/2)
 

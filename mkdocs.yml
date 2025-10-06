@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 site_name: Mòdul 0484 - Bases de dades
 site_description: Publicació progressiva des d'un sol repositori
 site_url: https://jpardo20.github.io/0484-bases-de-dades-23/
@@ -7,15 +6,8 @@ nav:
   - Continguts: continguts.md
   - Presentacions: https://jpardo20.github.io/0484-bases-de-dades-23/presentacions/
 
-=======
-site_name: Bases de dades
->>>>>>> 71ed736 (Add minimal docs/index.md so MkDocs build succeeds)
 theme:
   name: material
-nav:
-  - Inici: index.md
-  - Presentacions: https://jpardo20.github.io/0484-bases-de-dades-23/presentacions/
-
 
 # site_name: Mòdul 0484 - Bases de dades
 # site_description: Publicació progressiva des d'un sol repositori

@@ -1,21 +1,20 @@
-# DAM_MP02_002_UF01_Pres_002_Conceptes_Basics_Bases_Dades
 
-## Conceptes bàsics: de Bases de Dades
-
+# Tema 2: Conceptes bàsics: de Bases de Dades
+<br>
+<br>
 UD01 - Introducció a les Bases de Dades
+
+![data-base.png](./assets/img/data-base.png)
 
 ---
 
 ## Definició
 
-món real: constituït pels objectes (materials o no) de la realitat que ens interessen i amb els quals haurem de treballar.
+**món real**: constituït pels objectes (materials o no) de la realitat que ens interessen i amb els quals haurem de treballar.
 
-món conceptual: conjunt de coneixements o informacions obtinguts gràcies a l'observació de la part del món real que ens interessa. Un mateix món real pot donar lloc a diferents mons conceptuals, en funció de la manera de percebre la realitat, o els interessos de l'observador d'aquesta.
+**món conceptual**: conjunt de coneixements o informacions obtinguts gràcies a l'observació de la part del món real que ens interessa. Un mateix món real pot donar lloc a diferents mons conceptuals, en funció de la manera de percebre la realitat, o els interessos de l'observador d'aquesta.
 
-món de les interpretacions: representacions informàtiques, o dades, del món conceptual, necessàries per poder treballar.
-
-Definició
-
+**món de les interpretacions**: representacions informàtiques, o dades, del món conceptual, necessàries per poder treballar.
 
 
 ---
@@ -33,35 +32,32 @@ Definició
 
 ---
 
-## Diapositiva 5
+## Conversió de les concepcions en dades
 
 fase de disseny lògic: Es treballa amb el model abstracte de dades obtingut al final de l'etapa de disseny conceptual, per tal de traduir-ho al model de dades utilitzat pel SGBD amb el qual es vol implementar i mantenir la futura BD.
 
 fase de disseny físic: Es poden fer certes modificacions sobre l'esquema lògic obtingut en la fase de disseny anterior, per tal d'incrementar l'eficiència en algunes de les operacions que s'hagin de fer amb les dades.
 
-Conversió de les concepcions en dades
+
 
 
 
 ---
 
-## Diapositiva 6
+## Entitats, atributs i valors
 
 Tres elements caracteritzen fonamentalment les informacions:
 
-entitats: són els objectes del món real que conceptualitzem. Són identificables, és a dir, distingibles els uns dels altres. I ens interessen algunes (com a mínim una) de les seves propietats
+**entitats**: són els objectes del món real que conceptualitzem. Són identificables, és a dir, distingibles els uns dels altres. I ens interessen algunes (com a mínim una) de les seves propietats
 
-atributs: són les propietats de les entitats que ens interessen
+**atributs**: són les propietats de les entitats que ens interessen
 
-valors: són els continguts concrets dels atributs, les determinacions concretes que assoleixen.
-
-Entitats, atributs i valors
-
+**valors**: són els continguts concrets dels atributs, les determinacions concretes que assoleixen.
 
 
 ---
 
-## Diapositiva 7
+## Exemple d'entitat, atributs i valors (1/4)
 
 Considerarem que una pel·lícula concreta és una entitat, perquè és un objecte del món real, que hem conceptualitzat dins d'una categoria (la dels films cinematogràfics), i que al mateix temps és distingible d'altres entitats de la mateixa categoria (és a dir, d'altres films).
 
@@ -69,23 +65,18 @@ D'aquesta pel·lícula concreta ens interessaran alguns aspectes, que anomenarem
 
 Finalment, aquests atributs adoptaran uns valors concrets com ara, i respectivament, Paths of glory, Stanley Kubrick i 1957.
 
-Exemple d'entitat, atributs i valors
-
-
 
 ---
 
-## Diapositiva 8
+## Exemple d'entitat, atributs i valors (2/4)
 
-Exemple d'entitat, atributs i valors II
+![alt text](./assets/img/exemple-entitat-atribut-valor.png)
 
-font imdb.com
-
-
+font [imdb.com](https://www.imdb.com/)
 
 ---
 
-## Diapositiva 9
+## Exemple d'entitat, atributs i valors (3/4)
 
 Si només coneixem dos d'aquests tres elements, no disposarem d'una veritable informació, ja que es produirà alguna de les mancances següents:
 
@@ -94,87 +85,72 @@ desconeixerem quin atribut (propietat) de l'entitat adopta el valor obtingut, la
 
 Sabrem que l'entitat té una certa propietat, però en desconeixerem el valor, i per tant aquest coneixement difícilment ens resultarà útil.
 
-Exemple d'entitat, atributs i valors II
+
+---
+
+## Exemple d'entitat, atributs i valors (4/4)
+
+![alt text](./assets/img/exemple-entitat-atribut-valor-amb-buits.png)
+
+font [imdb.com](https://www.imdb.com/)
 
 
 
 ---
 
-## Diapositiva 10
+## Entitats tipus i entitats instància
 
-Exemple d'entitat, atributs i valors III
+**entitat tipus**: es tracta d'un tipus genèric d'entitat o, si es prefereix, d'una abstracció, que fa referència a una classe de coses com, per exemple, els cotxes, en general.
 
-font imdb.com
+**entitat instància**: es refereix a la conceptualització d'un objecte concret del món real, com ara un cotxe concret, distingible dels altres objectes del mateix tipus, gràcies a alguna propietat (com podria ser el valor de l'atribut Matrícula).
+
+![alt text](./assets/img/entitat-tipus.png)
+
+---
+
+## Tipus de dada
+
+**tipus de dada**: defineix un conjunt de valors amb unes característiques comunes que els fan compatibles, per la qual cosa també defineix una sèrie d'operacions admissibles sobre aquests valors.
+
 
 
 
 ---
 
-## Diapositiva 11
-
-entitat tipus: es tracta d'un tipus genèric d'entitat o, si es prefereix, d'una abstracció, que fa referència a una classe de coses com, per exemple, els cotxes, en general.
-
-entitat instància: es refereix a la conceptualització d'un objecte concret del món real, com ara un cotxe concret, distingible dels altres objectes del mateix tipus, gràcies a alguna propietat (com podria ser el valor de l'atribut Matrícula).
-
-Entitats tipus i entitats instància
-
-
-
----
-
-## Diapositiva 12
-
-tipus de dada: defineix un conjunt de valors amb unes característiques comunes que els fan compatibles, per la qual cosa també defineix una sèrie d'operacions admissibles sobre aquests valors.
-
-Tipus de dada
-
-
-
----
-
-## Diapositiva 13
+## Exemple de tipus de dada
 
 Podem considerar els nombres enters com un tipus de dada (diferent d'altres tipus, com per exemple els nombres reals, els caràcters, etc.), sobre el qual es poden definir certes operacions, com la suma, la resta, la multiplicació o la divisió entera (però no la divisió exacta, que només és possible entre els nombres reals).
 
-Exemple de tipus de dada
-
-
 
 ---
 
-## Diapositiva 14
+## Exemple de domini (1/2)
 
 Imaginem que, en l'àmbit d'uns estudis determinats, s'exigeix un mínim d'assistència a classes presencials per tal d'aconseguir el títol corresponent, independentment de les qualificacions obtingudes.
 Imaginem que s'admet, durant tot el curs acadèmic, un màxim de vint faltes injustificades. Doncs bé, hi podria haver un atribut de l'entitat ALUMNES, anomenat, per exemple, nombreFaltes, que recollís aquesta circumstància.
 Aquest atribut podria emmagatzemar dades de tipus enter. I també se'n podria limitar el domini de 0 (per indicar que no hi ha hagut cap inassistència) a 20 faltes injustificades, ja que en arribar a aquest límit es produiria l'expulsió de l'alumne.
 
-Exemple de domini
+---
 
+## Exemple de domini (2/2)
 
+![alt text](./assets/img/exemple-domini.png)
 
 ---
 
-## Diapositiva 15
-
-Exemple de domini II
-
-
-
----
-
-## Diapositiva 16
+## Valor `nul` dels atributs
 
 De vegades, el valor d'un atribut és desconegut o, fins i tot, no existeix. Per representar aquesta circumstància, l'atribut en qüestió haurà d'admetre el valor nul.
 
 L'expressió valor nul indica que no hi ha cap valor associat a un atribut determinat d'una entitat instància concreta.
 
-Valor nul dels atributs
+
 
 
 
 ---
 
-## Diapositiva 17
+## Exemple de valor `nul` (1/2)
 
 Considerem ara que l'entitat ALUMNES disposa d'un atribut anomenat telefon.
 
@@ -184,51 +160,40 @@ Però, si en definir el domini, s'indica que sí que admet valors nuls, el siste
 
 No confondre valor nul amb el zero, o amb l'espai en blanc.
 
-Exemple de valor nul
-
-
 
 ---
 
-## Diapositiva 18
+## Exemple de valor `nul` (2/2)
 
-Exemple de valor nul II
-
-
+![alt text](./assets/img/exemple-valor-null.png)
 
 ---
 
-## Diapositiva 19
+## Atribut identificador (clau primària `PK`)
 
-atribut identificador: és l'atribut o atributs que permet distingir inequívocament cada entitat instància de la resta, pel fet que el seu valor és únic, i no es repeteix en diferents entitats instància.
+**atribut identificador**: és l'atribut o atributs que permet distingir inequívocament cada entitat instància de la resta, pel fet que el seu valor és únic, i no es repeteix en diferents entitats instància.
 
 Els atributs d'una entitat seran identificadors, o no, en funció de l'objecte del món real que l'entitat vulgui modelitzar.
 
-Atribut identificador (clau primària PK)
 
 
 
 ---
 
-## Diapositiva 20
+## Exemple d'atribut identificador (clau primaria `PK`) (1/2)
 
 L'atribut dni pot servir molt bé per identificar les instàncies d'una entitat que modelitzi els alumnes d'un centre docent, ja que cada alumne tindrà un dni diferent.
 
-Exemple d'atribut identificador (clau primaria PK)
-
-
 
 ---
 
-## Diapositiva 21
+## Exemple d'atribut identificador (clau primaria `PK`) (2/2)
 
-Exemple d'atribut identificador (clau primaria PK) II
-
-
+![alt text](./assets/img/exemple-atribut-identificador.png)
 
 ---
 
-## Diapositiva 22
+## Atributs identificadors (clau primària PK)
 
 Tot atribut o conjunt d'atributs que permeten identificar inequívoca.
 
@@ -236,33 +201,31 @@ Per tant, hi haurà casos en què caldrà més d'un atribut per poder identifica
 
 Per definició, ni els atributs identificadors ni els que formen part d'una clau poden admetre mai el valor nul, perquè aleshores no servirien per distingir les entitats instància sense valor en un dels tipus d'atribut esmentat de la resta.
 
-Atributs identificadors (clau primària PK)
 
 
 
 ---
 
-## Diapositiva 23
+## Exemple d'Atributs identificadors (clau primària `PK`) (1/2)
 
 Per tal de diferenciar les instàncies d'una entitat que vol reflectir les notes finals dels alumnes en cada assignatura en què s'hagin matriculat, cal combinar els valors de dos atributs: un que designi l'alumne de què es tracti (típicament, el DNI), i un altre que indiqui l'assignatura a la qual correspon la nota (que podria ser una cosa com ara CodiAssignatura).
 
-Exemple d'Atributs identificadors (clau primària PK)
 
-
-
----
-
-## Diapositiva 24
-
-Exemple d'Atributs identificadors (clau primària PK)
 
 
 
 ---
 
-## Diapositiva 25
+## Exemple d'Atributs identificadors (clau primària `PK`) (2/2)
 
-dades => informacions representades informàticament
+
+![alt text](./assets/img/exemple-atribut-identificadors-2.png)
+
+---
+
+## El món de les representacions
+
+**dades** => informacions representades informàticament
 
 món de les dades el món de les representacions.
 
@@ -270,28 +233,30 @@ La representació més freqüent en l'àmbit informàtic de les BD és l'anomena
 
 BDs són conjunts de fitxers interrelacionats
 
-El món de les representacions
+
 
 
 
 ---
 
-## Diapositiva 26
+## Representacions tabulars i la seva implementació (1/2)
 
 Les informacions són conceptualitzacions obtingudes a partir de l'observació del món real.
 
 
-entitat: 	COTXES
+**entitat**:    **`COTXES`**
 
-atributs:	Matrícula i: 			Marca
+**atributs**:   **`Matrícula`** i
+                **`Marca`**
 
-Representacions tabulars i la seva implementació
 
+![alt text](./assets/img/representacions-tabulars.png)
 
 
 ---
 
-## Diapositiva 27
+## Representacions tabulars i la seva implementació (1/2)
 
-Representacions tabulars i la seva implementació II
+./assets/img/representacions-tabulars
 
+![alt text](./assets/img/representacions-tabulars-2.png)

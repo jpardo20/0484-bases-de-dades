@@ -11,4 +11,8 @@ site/
 # Cache del convertidor
 .publish-cache.json
 .vscode/settings.json
+<<<<<<< HEAD
+=======
+Correccio_presentacions.txt
+>>>>>>> 14ec35e (Correcció presentacions: cerca i ordenació funcionals, unificació de JSON i neteja de codi)
 Neteja_informe.txt
